@@ -5,3 +5,4 @@
 export * from './lib/ngx-thyme-ui.service';
 export * from './lib/ngx-thyme-ui.component';
 export * from './lib/ngx-thyme-ui.module';
+export * from './lib/button/button.component';

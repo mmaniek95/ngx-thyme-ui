@@ -1,14 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NgxThymeUiModule } from "../../projects/ngx-thyme-ui/src/lib/ngx-thyme-ui.module";
+import { Component, NgModule } from '@angular/core';
+
+import { ButtonComponent } from "../../projects/ngx-thyme-ui/src/lib/button/button.component";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NgxThymeUiModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    ButtonComponent
+  ],
   templateUrl: './app.component.html',
+  standalone: true,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ThymeUiLibrary';
+  buttonTitle: string = 'ThymeUiLibrary';
 }
